@@ -1,0 +1,412 @@
+
+* {
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+}
+.ln{ 
+    border: 1px solid black;}
+
+header{
+    margin: 0 0 0 0;
+    width:100%;
+    height:105px;
+    padding:0 0 30px 0;
+    position: relative;
+    box-shadow:  0 3px 6px rgba(0, 0, 0, 16%);
+    display: flex;
+    align-items:flex-end;
+    flex-direction: column;
+}
+.loader
+{
+   height: 100vh;
+   overflow: hidden;
+   background: linear-gradient(0deg, rgba(79,117,140,1) 0%, rgba(255,255,255,1) 32%);
+   position: relative;
+   display:flex;
+   justify-content: center;
+   margin:0;
+z-index: 100000;
+}
+
+.loader>div { 
+    height: 100px;
+    width:100px;
+    border:15px solid rgb(79,117,140);
+border-top:15px solid rgba(53,59,64,1) ;
+    position:absolute; 
+    margin:auto;
+    align-self:center;
+    border-radius: 50%;
+    animation:spin 1.5s infinite linear;
+}
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    } 
+
+}
+.wholepage{
+    display: none;
+}
+
+p{font-family: 'Montserrat', sans-serif;
+    Font-size: 16px;} 
+    
+.TopBar{
+Width:100%;
+position:absolute;
+height:25px;
+background-color:#2f2f2f;
+box-shadow: 0 3px 14px rgba(0, 0, 0, 63%);
+z-index: 1;
+align-self:flex-start;
+}
+nav {
+    /*border: 1px solid black;*/
+    margin:1.5rem 0 0 0;
+    width:100%;
+    height:40rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+}
+
+ul{
+    margin:0;
+    height:2rem;
+    align-items: baseline;
+    justify-content: right;
+    padding-right: 3.4%;
+} 
+a{
+    margin:0;
+    justify-content: left;
+    margin-top: 0rem;
+    cursor: pointer;
+}
+#logo{
+    width: 150px;
+}
+img{
+    width: 150px;
+  margin-right: auto;
+}
+#Home{
+    width:100%;
+    height:40px;
+    margin: 4rem 0 0 0;
+    font-family: 'Montserrat', sans-serif;
+    Font-size: 16px;
+    padding: 0 12px 10px 2px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color:#2f2f2f;
+    background-image:url("/Images/Cross\ out.png");
+    background-repeat: no-repeat;
+    background-size:3.8rem;
+    background-position: bottom left;}
+
+.UxNavBar {
+
+    height:40px;
+    margin: 4rem 0 0 0;
+    font-family: 'Montserrat', sans-serif;
+    Font-size: 16px;
+    padding: 0 12px 5px 2px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color:#2f2f2f;
+    justify-content: right;
+}
+
+.UxNavBar:hover {
+    width:100%;
+  
+    height:40px;
+    margin: 4rem 0 0 0;
+    font-family: 'Montserrat', sans-serif;
+    Font-size: 16px;
+    padding: 0 12px 5px 2px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color:#2f2f2f;
+    background-image:url("/Images/underline.png");
+    background-repeat: no-repeat;
+    background-size:3.8rem;
+    background-position: bottom left;
+}
+
+.UxNavBar:active {
+    width:100%;
+    height:40px;
+    margin: 4rem 0 0 0;
+    font-family: 'Montserrat', sans-serif;
+    Font-size: 16px;
+    padding: 0 12px 5px 2px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color:#2f2f2f;
+    background-image:url("/Images/Cross\ out.png");
+    background-repeat: no-repeat;
+    background-size:3.8rem;
+    background-position: bottom left;
+}
+.Industrialarrow {
+    margin:0;
+    padding: 0 0 0 0;
+    width:20px;
+    cursor: pointer;
+    align-self: flex-end;
+
+}
+.HeroPage{
+    margin: 3% 0 0 8.5%;
+}
+main {
+    float:left;
+    max-width: 35%;
+   /* border:1px solid black;*/
+    font-family: 'Montserrat', sans-serif;
+    Font-size: 14px;
+    flex-wrap:wrap;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    Font-size: 2.5rem;
+    font-weight:bold;
+    letter-spacing: 0.26px;
+    line-height: 30px;
+    color: #4F758C;
+    
+    margin: 0 0 0 0;
+    padding: 6rem 0 0 0;
+}
+h4, label { 
+    font-family: 'Montserrat', sans-serif;
+    Font-size: 1.625rem;
+    font-weight:bold;
+    color: #4F758C; 
+    padding: 2rem 0 8.1px 0; 
+}
+.chat{
+    margin:9rem 0 5rem 0;
+}
+.skill{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    padding: 16px 16px 0 0;
+    width: 11.5%;
+    cursor:pointer;
+}
+.skilllist{
+    opacity: 0%;
+    padding:1.25rem 0 1.25rem 0
+    
+}
+.skilllist:hover {
+    opacity:100%;
+    padding:1.25rem 0 1.25rem 0}
+
+button{
+    display:block;
+    border:none;
+    Color: #fafafa;
+    background-color:#5f6973;
+    Padding: 5.5px 14px;
+    border-radius:18px;
+    font-size: 14px;
+    cursor: pointer;
+}
+button:hover{
+    width:90%;
+    height: 90%;
+    display:block;
+    border:none;
+    Color: #fafafa;
+    background-color:#5f6973;
+    Padding: 5.5px 14px;
+    border-radius:18px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:Active {
+    background-color: #fafafa;
+    color:#5f6973;
+    border: 2px solid #6D96A6;
+    transition:ease-in-out 300ms 300ms
+}
+
+#resumeButton:hover{
+    width:90%;
+    height: 90%;
+    display:block;
+    border:none;
+    Color:white;
+    background-color:#5f6973;
+    Padding: 5.5px 14px;
+    border-radius:18px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.modal_background{
+    position: fixed;
+    width:100%;
+    height:100vh;
+    display:flex; 
+    margin:0;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(95, 105, 115, 0.56);
+    z-index: 1;
+}
+.modal{
+    background-color:white; 
+    width:45%;
+    height: 40%;
+    border-radius: 18px;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    padding: 1rem;
+    text-align: center;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 3rem;}
+
+.close{
+    width:8%;
+    display:block;
+    align-self: flex-end;
+    margin-top: -1.5rem
+}
+.close:hover{
+    width:8%;
+    height:15%;
+    display:block;
+    align-self: flex-end;
+    margin-top: -1.5rem
+}
+aside {
+    width:45%;
+    margin-right: 8rem;
+    float:right;
+   /*border: 1px solid black; */
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(2,1fr);
+    position: sticky;
+    align-self: start;
+    top:0;
+
+}
+.nested{
+    display:grid;
+    grid-template-columns: 90px 90px;
+    grid-template-rows: 29px;
+    grid-gap: 16px;
+    grid-column: 1/4;
+    grid-row: 1/4;
+    justify-content: right;
+}
+.pdf{
+    height: auto;
+    align-items:flex-end;
+    
+}
+.Coverimage{
+    width:110%;
+   align-items:flex-end;
+   clip-path: inset(0% 4.5% 0% 0%);
+   margin: 10% -10% 0 0;
+   grid-column: 1/4;
+}
+
+.Designskills{
+    Padding:2rem 140px 50px 0px;
+    Width: 100%;
+    display:flex; 
+    flex-direction: row;
+    justify-content: center;
+}
+
+.examples{
+    z-index:1;
+}
+
+.XD, .figma, .iL, .Ps, .Pr,.Ae, .SolidWorks, .fusion { 
+    box-shadow:0 3px 6px rgba(0, 0, 0, 16%);
+    font-family: 'Montserrat', sans-serif;
+    Font-size: 16px;
+    line-height: 3rem;
+    margin: 1rem 0 2rem 0;
+    padding-left: 2rem;
+    display:none;
+}
+.accordion{
+    margin:0 0 4rem 0;
+}
+.Industrial, .UserInterface, .UserResearch{
+   margin:auto;
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   object-fit:scale-down;
+   /* grid-area: 1 / 3 /4 / 3;*/
+}
+.footer {
+   /* border: 1px solid black; */
+    width: 100%;
+   max-height:6rem;
+    padding: 0px 0 0px 0;
+    display:flex;
+    flex-direction: column;
+
+}
+.socialmedia {
+    width: 100%;
+    position:relative;
+    align-self: flex-end;
+   
+    
+}
+hr {border:none;
+    border-bottom: 1px solid #6D96A6;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);
+    }
+
+.sociallinks {
+    float:right;
+    width:2%;
+    position:inline;
+    padding: 10px 14px 7px 0; 
+    cursor: pointer;
+    align-items: baseline;
+}
+
+.smalltext {
+    font-family: 'SFProText', sans-serif;
+    Font-size: 10px;
+    font-weight:normal;
+    letter-spacing: 0.26px;
+    z-index: -1;
+}
+#update{
+    font-family: 'SFProText', sans-serif;
+    Font-size: 10px;
+    font-weight:normal;
+    letter-spacing: 0.26px;
+    line-height:30px; 
+    margin: 0 0 0 11%;
+}
+
+
+/*@media only screen and (max-width: 600px){}*/
