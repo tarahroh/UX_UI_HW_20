@@ -1,6 +1,7 @@
 
 /*Please note particular parts in the redling have been over calculated and restricted certian movement. This means in appearance it is the same but the pixel values may have had to be changed ever so slightly. for the purposes of the website screen visability structure*/
 
+
 * {
     box-sizing:border-box;
     padding:0;
@@ -20,7 +21,42 @@ header{
     align-items:flex-end;
     flex-direction: column;
 }
+.loader
+{
+   height: 100vh;
+   overflow: hidden;
+   background: linear-gradient(0deg, rgba(79,117,140,1) 0%, rgba(255,255,255,1) 32%);
+   position: relative;
+   display:flex;
+   justify-content: center;
+   margin:0;
+z-index: 100000;
+}
 
+.loader>div { 
+    height: 100px;
+    width:100px;
+    border:15px solid rgb(79,117,140);
+border-top:15px solid rgba(53,59,64,1) ;
+    position:absolute; 
+    margin:auto;
+    align-self:center;
+    border-radius: 50%;
+    animation:spin 1.5s infinite linear;
+}
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    } 
+
+}
+/*.wholepage{
+    display: /none;
+}*/
+
+p{font-family: 'Montserrat', sans-serif;
+    Font-size: 16px;} 
+    
 .TopBar{
 Width:100%;
 position:absolute;
@@ -31,23 +67,34 @@ z-index: 1;
 align-self:flex-start;
 }
 nav {
-    margin:0 0 0 0;
-    padding:20px 140px 0 0;
+    /*border: 1px solid black;*/
+    margin:1.5rem 0 0 0;
     width:100%;
-    justify-content: left;
-    align-items:flex-end;
+    height:40rem;
     display:flex;
-}
-img{
-    width:140px;
-  cursor: pointer;
-  clip-path: inset(0 0 9% 0);
-  margin-right: auto;
+    justify-content:space-between;
+    align-items:flex-end;
 }
 
-.il{
-    text-decoration:none;
-    
+ul{
+    margin:0;
+    height:2rem;
+    align-items: baseline;
+    justify-content: right;
+    padding-right: 3.4%;
+} 
+a{
+    margin:0;
+    justify-content: left;
+    margin-top: 0rem;
+    cursor: pointer;
+}
+#logo{
+    width: 150px;
+}
+img{
+    width: 150px;
+  margin-right: auto;
 }
 #Casestudies{
     width:100%;
@@ -64,6 +111,7 @@ img{
     background-repeat: no-repeat;
     background-size:3.8rem;
     background-position: bottom left;}
+
 .UxNavBar {
 
     height:40px;
@@ -96,18 +144,31 @@ img{
     background-position: bottom left;
 }
 
-
+.UxNavBar:active {
+    width:100%;
+    height:40px;
+    margin: 4rem 0 0 0;
+    font-family: 'Montserrat', sans-serif;
+    Font-size: 16px;
+    padding: 0 12px 5px 2px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color:#2f2f2f;
+    background-image:url("/Images/Cross\ out.png");
+    background-repeat: no-repeat;
+    background-size:3.8rem;
+    background-position: bottom left;
+}
 .Industrialarrow {
     margin:0;
     padding: 0 0 0 0;
     width:20px;
     cursor: pointer;
-    align-self: flex-end;
-
-}
+    align-self: flex-end;}
 
 .CaseStudies{
-    margin: 4% 0 0 8.5%;
+    margin: 4% 0 0 .5%;
 }
 main {
     float:left;
@@ -241,7 +302,7 @@ aside {
     top:0; 
     left:0;
     width:100%;
-    height:91%;
+    height: 100%;
     background-color:#394A59;
     color:white;
     Display:flex; 
@@ -274,7 +335,7 @@ aside {
      top:0; 
      left:0;
      width:100%;
-     height:91%;
+     height:100%;
      background-color:#394A59;
      color:white;
      Display:flex; 
@@ -292,7 +353,7 @@ aside {
      top:0; 
      left:0;
      width:100%;
-     height:91%;
+     height:100%;
      background-color:#394A59;
      color:white;
      Display:flex; 
@@ -342,7 +403,7 @@ aside {
      top:0; 
      left:0;
      width:100%;
-     height:91%;
+     height:100%;
      background-color:#394A59;
      color:white;
      Display:flex; 
